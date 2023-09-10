@@ -1,0 +1,30 @@
+[package]
+name = "The Vanishing Ash-chirps"
+description = "A quest mod for May Modathon 2023."
+homepage = "https://www.nexusmods.com/morrowind/mods/52870"
+repository = "https://github.com/tewlwolow/The-Vanishing-Ash-chirps"
+authors = ["tewlwolow"]
+version = "1.0.2"
+
+[tools.mwse]
+lua-mod = "tew.ashchi"
+wait-until-initialize = false
+
+[dependencies]
+assets = [
+	"Icons\\tew\\ashchi",
+]
+
+[dependencies.mods."The Vanishing Ash-chirps"]
+plugin = "The Vanishing Ash-chirps.ESP"
+
+
+[dependencies.mods."Skyrim Style Quest Notifications"]
+mwse-module = "SSQN"
+url = "https://www.nexusmods.com/morrowind/mods/53175"
+
+[dependencies.mwse]
+buildnumber = 3150
+
+[dependencies.mge-xe]
+version = ">=0.15.0"
